@@ -1,4 +1,4 @@
-package agent;
+package agent.Aggregation;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ import java.util.Random;
  * @create: 2019-12-25 16:41
  **/
 
-public class Bird implements Flyable{
+public class Bird implements Flyable {
     @Override
     public void fly(){
         System.out.println("Bird is flying...");

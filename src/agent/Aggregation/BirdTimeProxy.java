@@ -1,4 +1,4 @@
-package agent;
+package agent.Aggregation;
 
 /**
  * @program: Java-learn
@@ -7,7 +7,7 @@ package agent;
  * @create: 2019-12-25 16:47
  **/
 
-public class BirdTimeProxy implements  Flyable{
+public class BirdTimeProxy implements Flyable {
     private Flyable flyable;
     public BirdTimeProxy(Flyable flyable){
         this.flyable = flyable;
