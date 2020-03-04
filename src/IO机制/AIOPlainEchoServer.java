@@ -59,8 +59,7 @@ public class AIOPlainEchoServer {
         @Override
         public void completed(Integer result, ByteBuffer buffer) {
             buffer.flip();
-            channel.write(buffer, buffer, new CompletionHandler<Integer,
-                                ByteBuffer>() {
+            channel.write(buffer, buffer, new CompletionHandler<Integer, ByteBuffer>() {
                 @Override
                 public void completed(Integer result, ByteBuffer buffer) {
                     if (buffer.hasRemaining()) {
@@ -82,8 +81,12 @@ public class AIOPlainEchoServer {
         }
 
         @Override
-        public void failed(Throwable exc, ByteBuffer attachment) {
+        public void failed (Throwable exc, ByteBuffer attachment) {
+            try {
+                channel.close();
+            } catch (IOException e) {
 
+            }
         }
     }
 
