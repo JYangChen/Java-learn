@@ -1,4 +1,4 @@
-package 集合;
+package collections;
 
 /**
  * @program: Java-learn
