@@ -2,6 +2,10 @@ package Generics;
 
 import sun.rmi.runtime.Log;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+
 /**
  * @program: Java-learn
  * @description:
@@ -31,7 +35,6 @@ public class Main {
         Generic<Integer> gInteger = new Generic<Integer>(123);
         Generic<Number> gNumber = new Generic<Number>(456);
         showKeyValue1(gNumber);
-
 // showKeyValue这个方法编译器会为我们报错：Generic<java.lang.Integer>
 // cannot be applied to Generic<java.lang.Number>
 //showKeyValue(gInteger);
