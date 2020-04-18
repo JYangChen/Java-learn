@@ -26,6 +26,7 @@ public class DynamicProxy {
 
         //执行被代（dai）理者的方法。
         p.func();
+        p.fun();
     }
 
 }
